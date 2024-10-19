@@ -1,33 +1,40 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
-
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Análisis de Datos</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/app.js" defer></script>
 </head>
-
 <body>
-
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js"></script>
-
+<header>
+  <h1>Sistema de Análisis de Datos en Tiempo Real</h1>
+</header>
+<main>
+  <section>
+    <h2>Tabla de Eventos Procesados</h2>
+    <table id="eventTable">
+      <thead>
+      <tr>
+        <th>Tipo de Evento</th>
+        <th>Datos</th>
+      </tr>
+      </thead>
+      <tbody>
+      <!-- Las filas se agregarán aquí dinámicamente -->
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2>Gráfico de Rendimiento del Sistema</h2>
+    <canvas id="performanceChart"></canvas>
+  </section>
+  <section>
+    <h2>Diagrama de Arquitectura del Sistema</h2>
+    <img src="images/architecture_diagram.png" alt="Diagrama de Arquitectura" />
+  </section>
+</main>
 </body>
-
 </html>
